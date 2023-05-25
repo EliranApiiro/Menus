@@ -6,18 +6,17 @@ namespace Ex04.Menus.Delegates
     {
         private SubMenu m_SubMenu;
         
-        public MenuItem(int i_Number, string i_Text) : base(i_Number, i_Text) {}
-        
         public SubMenu SubMenu
         {
             get
             {
                 return m_SubMenu;
             }
-            set
-            {
-                m_SubMenu = value;
-            }
+        }
+
+        public MenuItem(int i_Number, string i_Text) : base(i_Number, i_Text)
+        {
+            m_SubMenu = new SubMenu(i_Text);
         }
     }
 }

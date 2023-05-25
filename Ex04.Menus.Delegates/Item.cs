@@ -9,6 +9,7 @@ namespace Ex04.Menus.Delegates
 
         public Item(int i_Number, string i_Text)
         {
+            m_Number = i_Number;
             m_Text = i_Text;
         }
 
